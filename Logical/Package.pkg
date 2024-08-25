@@ -7,5 +7,6 @@
     <Object Type="File">Constants.var</Object>
     <Object Type="Package" Description="Global libraries">Libraries</Object>
     <Object Type="Package">Axis</Object>
+    <Object Type="Package">DancerCtrl</Object>
   </Objects>
 </Package>

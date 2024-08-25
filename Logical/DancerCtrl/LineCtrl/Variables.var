@@ -1,0 +1,8 @@
+VAR
+	RollerDiamter : REAL;
+	LinearVelocity : REAL;
+	AngularVelocity : REAL;
+	Start : BOOL;
+	StLineCtrl : AxisState_enum;
+	Stop : BOOL;
+END_VAR
