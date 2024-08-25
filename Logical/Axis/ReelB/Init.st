@@ -1,6 +1,8 @@
 
 
 PROGRAM _INIT
-	(* Insert code here *)
-	 
+	
+	ConfigReq := TRUE;
+	Act_Parameters;
+	
 END_PROGRAM
