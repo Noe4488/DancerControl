@@ -1,0 +1,18 @@
+VAR CONSTANT
+	MAX_AXIS : USINT := 3; (*Max value axis to be controlled *)
+END_VAR
+(*Axis Identifier*)
+VAR CONSTANT
+	VMASTER : USINT := 0;
+	REEL_A : USINT := 1;
+	REEL_B : USINT := 2;
+	GENERIC : USINT := 3;
+END_VAR
+(*Axis Parameters*)
+VAR CONSTANT
+	LINE_ACCELERATION : REAL := 500000.0; (*Acceleration and deceleration of the line axis.*)
+	MAX_LINE_DECELERATION : REAL := 1000000.0; (*Maximum deceleration of the line axis.*)
+	MAX_DANCER_POSITION : REAL := 500.0; (*Maximum position of the dancer arm.*)
+	STANDSTILL_WINDOW : REAL := 0.0; (*Speed dead band*)
+	PI : REAL := 3.1416; (*PI Value*)
+END_VAR

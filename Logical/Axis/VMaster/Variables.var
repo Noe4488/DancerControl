@@ -1,0 +1,37 @@
+	(*Mp Axis FB*)
+VAR
+		AxisBasic : MpAxisBasic;
+		AxisBasicPar : MpAxisBasicParType;
+		AxisConfig : MpAxisBasicConfig;
+		AxisConfigPar : MpAxisBasicConfigType;
+		ReadAxisError : MC_BR_ReadAxisError;
+END_VAR
+	(*Axis Control Var *)
+	VAR
+		Axis : UDINT; (*Axis*)
+		AxisIndex : USINT; (*Axis Index *)
+		StAxis : AxisState_enum; (*Axis control steps*)
+		MpLink : MpComIdentType; (*Axis basic parameters structure*)
+END_VAR
+	(*Axis Speed Control var *)
+	VAR
+		OldVelocity : REAL; (*Old Velocity Value*)
+END_VAR
+	(*Axis Configuration*)
+	VAR
+		StConfig : ConfigStates_enum; (*Configuration steps*)
+		ConfigDone : BOOL; (*Configuration done*)
+		AxisDirection : BOOL; (*Command direction 1 = CW; 0 = CCW*)
+		Direction : MpAxisMotorDirectionEnum; (*Status diection *)
+		ConfigReq : BOOL; (*Configuration command*)
+		LimitSpeed : REAL; (*Speed limmit*)
+		LimitAccDec : REAL; (*acceleratio/Deceleration limit*)
+		GearIn : UDINT; (*Input ratio*)
+		GearOut : UDINT; (*output ratio*)
+		Period : LREAL; (*Period  exemple 360.0 degrees.*)
+		Resolution : REAL; (*Minimum distance that can be used for a movement*)
+		AxisName : STRING[20]; (*Axis Name *)
+		OldAccel : REAL; (*Old Acel value *)
+		OldDecel : REAL; (*Old  decel value*)
+END_VAR
+

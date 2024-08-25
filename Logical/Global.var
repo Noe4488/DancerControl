@@ -1,5 +1,11 @@
+(*Axis Structure *)
 VAR
 	gAxReelA : ACP10AXIS_typ;
 	gAxReelB : ACP10AXIS_typ;
 	gVMaster : ACP10VAXIS_typ;
+END_VAR
+(*Control Axis Structure *)
+VAR
+	gAxis : ARRAY[0..MAX_AXIS] OF axis_typ;
+	AxisIndex : USINT;
 END_VAR
