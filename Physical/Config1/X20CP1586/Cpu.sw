@@ -7,6 +7,8 @@
   <TaskClass Name="Cyclic#4">
     <Task Name="VMaster" Source="Axis.VMaster.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="LineCtrl" Source="DancerCtrl.LineCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="ReelA" Source="Axis.ReelA.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="ReelB" Source="Axis.ReelB.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />

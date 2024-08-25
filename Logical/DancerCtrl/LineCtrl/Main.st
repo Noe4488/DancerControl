@@ -39,6 +39,9 @@ PROGRAM _CYCLIC
 			
 			(*************** STATE MOTION **************************)
 			
+			(*gAxis[VMASTER].Parameter.Acceleration := 10000.0; // grados/s*)
+			(*gAxis[VMASTER].Parameter.Deceleration := 10000.0; // grados/s*)
+			
 			Start := FALSE;
 			gAxis[VMASTER].Command.MoveVelocity := TRUE;
 			
