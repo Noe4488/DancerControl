@@ -15,7 +15,8 @@ PROGRAM _CYCLIC
 	gAxis[VMASTER].Parameter.Velocity := ((LinearVelocity * 360)/(PI * RollerDiamter));
 	AngularVelocity := (gAxis[VMASTER].Status.ActVelocity * (PI/180)) * (RollerDiamter / 2);
 	(*LinearVelocity := gControl.Cmd.LineVelocity;*)
-	(*gControl.Sts.LineVelocity := *) AngularVelocity;
+	gLineVelocity :=  AngularVelocity/0.001;
+	
 	
 	CASE StLineCtrl OF 
 		
@@ -44,9 +45,11 @@ PROGRAM _CYCLIC
 			
 			Start := FALSE;
 			gAxis[VMASTER].Command.MoveVelocity := TRUE;
+			gAxis[REEL_A].Command.VelocityControl := TRUE;
 			
 			IF Stop THEN
 				gAxis[VMASTER].Command.MoveVelocity := FALSE;
+				gAxis[REEL_A].Command.VelocityControl := FALSE;
 				StLineCtrl := STATE_STOPPING;
 			END_IF
 			

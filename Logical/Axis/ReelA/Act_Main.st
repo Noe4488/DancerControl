@@ -110,15 +110,15 @@ ACTION Act_Main:
 			(******************** VELOCITY CONTROL **********************)
 			(* STATE: velocity control *)
 			(* activate MC_BR_VelocityControl *)
-			//			VelocityControl.Enable := TRUE;
-			//			VelocityControl.CyclicVelocity := gControl.Winder.SetVelocity ;
-			//			VelocityControl.CyclicVelocityCorrection :=  gControl.Winder.VelocityCorrection;
-			//			VelocityControl.CyclicTorque := gControl.Winder.SetMotorTorque;
-			//			VelocityControl.Acceleration := gAxis[AxisIndex].Parameter.Acceleration;     
-			//			VelocityControl.Deceleration := gAxis[AxisIndex].Parameter.Deceleration ;   
-			//			VelocityControl.TorqueMode := mcFF;
-			//			VelocityControl.SctrlKv := gControl.Winder.ActProportionalGain;
-			//			VelocityControl.SctrlTn := gControl.Winder.ActIntegrationTime;
+						VelocityControl.Enable := TRUE;
+						VelocityControl.CyclicVelocity := gSetWinderVelocity;
+						VelocityControl.CyclicVelocityCorrection :=  gVelocityCorrection;
+						VelocityControl.CyclicTorque := gSetMotorTorque;
+						VelocityControl.Acceleration := gAxis[AxisIndex].Parameter.Acceleration;     
+						VelocityControl.Deceleration := gAxis[AxisIndex].Parameter.Deceleration ;   
+						VelocityControl.TorqueMode := mcFF;
+						VelocityControl.SctrlKv := gActProportionalGain;
+						VelocityControl.SctrlTn := gActIntegrationTime;
 			(* this feature is not possible for ACOPOS simulation *)
 			// VelocityControl.InitSctrl := gControl.Winder.InitSpeedController;
 			

@@ -9,6 +9,7 @@
     <Task Name="LineCtrl" Source="DancerCtrl.LineCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="ReelA" Source="Axis.ReelA.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="ReelB" Source="Axis.ReelB.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="DancerCont" Source="DancerCtrl.DancerController.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />

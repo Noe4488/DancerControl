@@ -1,0 +1,36 @@
+(*Winder Diameter Estimation*)
+VAR
+	DiameterEstimator : MTWinderDiameterEstimator; (*diameter estimator*)
+	ActLinePosition : DINT; (*actual line position*)
+	ActWinderPosition : DINT; (*actual winder position*)
+	ActDancerPosition : REAL; (*actual dancer position*)
+END_VAR
+(* Dancer Controller *)
+VAR
+	DancerController : MTWinderDancerController; (*tension controller*)
+	SetDancerPosition : REAL; (*set material tension*)
+	ActDiameter : REAL; (*actual diameter*)
+	VelocityCorrection : REAL; (*actual velocity correction*)
+END_VAR
+(*Simulation Model*)
+VAR
+	ConfigurationParameters : MTWinderConfigurationType; (* configuration parameters *)
+	SimulationParameters : MTWinderSimulationModelType; (* simulation model parameters *)
+	SetLineVelocity : REAL; (* set line velocity *)
+	SetWinderVelocity : REAL; (* set winder velocity *)
+	WinderVelocityCorrection : REAL; (* winder velocity correction *)
+	SetMotorTorque : REAL; (* set motor torque *)
+	ActProportionalGain : REAL; (* proportional gain *)
+	ActIntegrationTime : REAL; (* integration time *)
+	InitSpeedController : BOOL; (* initialization of the speed controller *)
+	SimulationModel : MTWinderSimulationModel; (* function block MTWinderSimulationModel *)
+END_VAR
+(* Axis Controller *)
+VAR
+	AxisController : MTWinderAxisController;
+	SetMaterialTension : REAL := 0.0;
+	SynchronistionTime : REAL := 0.0;
+	StartSynchronisation : BOOL := FALSE;
+	StopSynchronisation : BOOL := FALSE;
+	ActInertia : REAL;
+END_VAR

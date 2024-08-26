@@ -29,7 +29,7 @@ ACTION Act_Parameters:
 	
 	// ---- Definicion Paramentros de posicion del eje ----//
 	Period 				:= 360.0; 
-	Resolution		:= 0.01;
+	Resolution		:= 0.001;
 	
 	/////////////////////////////////////////////////////////////////
 

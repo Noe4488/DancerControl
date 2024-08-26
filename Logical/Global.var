@@ -8,4 +8,11 @@ END_VAR
 VAR
 	gAxis : ARRAY[0..MAX_AXIS] OF axis_typ;
 	AxisIndex : USINT;
+	gVelocityCorrection : REAL;
+	gLineVelocity : REAL;
+	gSetWinderVelocity : REAL;
+	gSetMotorTorque : REAL;
+	gActProportionalGain : REAL;
+	gActIntegrationTime : REAL;
+	gInitSpeedController : BOOL;
 END_VAR
